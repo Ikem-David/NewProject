@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.HomeSection1{
+    background-Image : url(../public/HomePageModel.jpg);
+    height: 100vh;
+    background-Size: cover;
+    background-Position: center;
+    background-Repeat: no-repeat;
+}
+
+.HomeSection1Content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    text-align: center;
+}
+
+.HSC1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.HSC1 h2{
+    font-size: 2.4rem;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.HSC1 p{
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.HSC2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.HSC2 h2{
+    font-size: 2.4rem;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.HSC2 p{
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.Icon:hover{
+    cursor: pointer;
+}
+
+.NavContainer > div {
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.NavContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    padding-top: 16px;
+}
+
+.NavLogo {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.NavBar {
+    justify-content: center;
+}
+
+.NavBar ul,
+.NavItems {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar li {
+    cursor: pointer;
+    font-size: 1.20rem;
+}
+
+.NavItems {
+    justify-content: flex-end;
+}
+
+.NavItems button {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+}
+
+.ProfilePicture {
+    align-items: center;
+    background-color: #000000;
+    border-radius: 50%;
+    color: #f7f0df;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    overflow: hidden;
+    width: 36px;
+}
+
+.ProfilePicture:hover{
+    cursor: pointer;
+}
+
+.ProfilePicture img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .NavContainer {
+        padding: 0 16px;
+    }
+
+    .NavBar ul,
+    .NavItems {
+        gap: 12px;
+    }
+}

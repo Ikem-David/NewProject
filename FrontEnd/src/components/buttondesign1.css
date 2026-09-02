@@ -1,0 +1,123 @@
+.flow-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  height: 50px;
+
+  padding: 12px 32px;
+
+  border: 1.5px solid rgba(51, 51, 51, 0.4);
+  border-radius: 100px;
+
+  background: transparent;
+  color: #111111;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  transition:
+    all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Prevent button from looking strange when clicked */
+.flow-button:active {
+  transform: scale(0.95);
+}
+
+/* Arrows */
+.flow-arrow {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  z-index: 9;
+
+  fill: none;
+
+  transition:
+    all 800ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Left arrow */
+.flow-arrow-left {
+  left: -25%;
+  stroke: #111111;
+}
+
+/* Right arrow */
+.flow-arrow-right {
+  right: 16px;
+  stroke: #111111;
+}
+
+/* Text */
+.flow-button-text {
+  position: relative;
+  z-index: 1;
+
+  transform: translateX(-12px);
+
+  transition:
+    transform 800ms ease-out;
+}
+
+/* Animated circle */
+.flow-circle {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 16px;
+  height: 16px;
+
+  transform: translate(-50%, -50%);
+
+  background: #111111;
+  border-radius: 50%;
+
+  opacity: 0;
+
+  transition:
+    all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.flow-button:hover {
+  border-color: transparent;
+  border-radius: 12px;
+  color: white;
+}
+
+/* Move left arrow into button */
+.flow-button:hover .flow-arrow-left {
+  left: 16px;
+  stroke: white;
+}
+
+/* Move text to the right */
+.flow-button:hover .flow-button-text {
+  transform: translateX(12px);
+}
+
+/* Expand circle */
+.flow-button:hover .flow-circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/* Move right arrow outside */
+.flow-button:hover .flow-arrow-right {
+  right: -25%;
+  stroke: white;
+}
