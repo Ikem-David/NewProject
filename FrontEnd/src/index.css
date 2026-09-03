@@ -4,12 +4,38 @@
     padding: 0;
 }
 
+.arrival-card {
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) rgba(0, 0, 0, 0.28);
+    transition: box-shadow 180ms ease-out, transform 180ms ease-out;
+}
+
+.arrival-card:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
 .HomeSection1{
-    background-Image : url(../public/HomePageModel.jpg);
+    background-Image : url(/HomePageModel.jpg);
     height: 100vh;
     background-Size: cover;
     background-Position: center;
     background-Repeat: no-repeat;
+}
+
+.HomeSection2{
+    background-color:#FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeSection2 h2{
+    padding-bottom: 75px;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 .HomeSection1Content{
@@ -28,14 +54,12 @@
 
 .HSC1 h2{
     font-size: 2.4rem;
-    color: #000000;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
 }
 
 .HSC1 p{
-    color: #000000;
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
@@ -50,14 +74,12 @@
 
 .HSC2 h2{
     font-size: 2.4rem;
-    color: #000000;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px;
 }
 
 .HSC2 p{
-    color: #000000;
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
@@ -139,6 +161,11 @@
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.Footer{
+    height: 45vh;
+    background-color: black;
 }
 
 @media (max-width: 600px) {

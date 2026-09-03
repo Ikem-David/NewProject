@@ -3,7 +3,7 @@ import "./buttondesign1.css";
 
 function FlowButton({ text = "Modern Button" }) {
   return (
-    <button className="flow-button">
+    <button onClick={() => {document.querySelector(".HomeSection2")?.scrollIntoView({behavior: "smooth"})}} className="flow-button">
       {/* Left arrow */}
       <ArrowRight className="flow-arrow flow-arrow-left" />
 
