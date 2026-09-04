@@ -1,0 +1,81 @@
+.Icon:hover{
+    cursor: pointer;
+}
+
+.NavContainer > div {
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.NavContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    padding-top: 16px;
+}
+
+.NavLogo {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.NavBar {
+    justify-content: center;
+}
+
+.NavBar ul,
+.NavItems {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar li {
+    cursor: pointer;
+    font-size: 1.20rem;
+}
+
+.NavItems {
+    justify-content: flex-end;
+}
+
+.NavItems button {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+}
+
+.ProfilePicture {
+    align-items: center;
+    background-color: #000000;
+    border-radius: 50%;
+    color: #f7f0df;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    overflow: hidden;
+    width: 36px;
+}
+
+.ProfilePicture:hover{
+    cursor: pointer;
+}
+
+.ProfilePicture img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.NavLink {
+    text-decoration: none;
+    color: black;
+}

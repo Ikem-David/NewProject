@@ -1,3 +1,5 @@
+import './new_arrival_card.css'
+
 const ArrivalCard = ({image, text}) => {
     const handleMouseMove = (event) => {
         const card = event.currentTarget;

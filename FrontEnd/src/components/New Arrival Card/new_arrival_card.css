@@ -1,0 +1,9 @@
+.arrival-card {
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) rgba(0, 0, 0, 0.28);
+    transition: box-shadow 180ms ease-out, transform 180ms ease-out;
+}
+
+.arrival-card:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+}

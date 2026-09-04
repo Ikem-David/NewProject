@@ -4,16 +4,6 @@
     padding: 0;
 }
 
-.arrival-card {
-    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) rgba(0, 0, 0, 0.28);
-    transition: box-shadow 180ms ease-out, transform 180ms ease-out;
-}
-
-.arrival-card:hover {
-    transform: translateY(-4px);
-    cursor: pointer;
-}
-
 .HomeSection1{
     background-Image : url(/HomePageModel.jpg);
     height: 100vh;
@@ -83,89 +73,6 @@
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-}
-
-
-.Icon:hover{
-    cursor: pointer;
-}
-
-.NavContainer > div {
-    align-items: center;
-    display: flex;
-    flex: 1;
-}
-
-.NavContainer {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 32px;
-    padding-top: 16px;
-}
-
-.NavLogo {
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.NavBar {
-    justify-content: center;
-}
-
-.NavBar ul,
-.NavItems {
-    align-items: center;
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.NavBar li {
-    cursor: pointer;
-    font-size: 1.20rem;
-}
-
-.NavItems {
-    justify-content: flex-end;
-}
-
-.NavItems button {
-    background: transparent;
-    border: 0;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    padding: 0;
-}
-
-.ProfilePicture {
-    align-items: center;
-    background-color: #000000;
-    border-radius: 50%;
-    color: #f7f0df;
-    display: flex;
-    height: 36px;
-    justify-content: center;
-    overflow: hidden;
-    width: 36px;
-}
-
-.ProfilePicture:hover{
-    cursor: pointer;
-}
-
-.ProfilePicture img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-.Footer{
-    height: 45vh;
-    background-color: black;
 }
 
 @media (max-width: 600px) {

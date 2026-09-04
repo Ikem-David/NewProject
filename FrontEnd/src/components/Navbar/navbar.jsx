@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import './navbar.css'
+
 const NavBar = ({ profileImage = "" }) => {
     return (
         <div className="NavContainer">
@@ -6,9 +9,9 @@ const NavBar = ({ profileImage = "" }) => {
             </div>
             <div className="NavBar">
                 <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Contact</li>
+                    <Link className="NavLink" to={'/'}><li>Home</li></Link>
+                    <Link className="NavLink" to={'/shop'}><li>Shop</li></Link>
+                    <Link className="NavLink" to={'contact'}><li>Contact</li></Link>
                 </ul>
             </div>
             <div className="NavItems">
