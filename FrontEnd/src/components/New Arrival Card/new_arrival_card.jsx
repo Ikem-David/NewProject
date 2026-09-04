@@ -29,7 +29,7 @@ const ArrivalCard = ({image, text}) => {
                     width: '400px',
                     marginLeft:'50px',
                     marginRight:'50px',
-                    borderRadius:'40px',
+                    borderRadius:'10px',
                     '--shadow-x':'0px',
                     '--shadow-y':'14px',
                     '--shadow-blur':'24px'}}

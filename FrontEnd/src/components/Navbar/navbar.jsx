@@ -11,7 +11,7 @@ const NavBar = ({ profileImage = "" }) => {
                 <ul>
                     <Link className="NavLink" to={'/'}><li>Home</li></Link>
                     <Link className="NavLink" to={'/shop'}><li>Shop</li></Link>
-                    <Link className="NavLink" to={'contact'}><li>Contact</li></Link>
+                    <Link className="NavLink" to={'/contact'}><li>Contact</li></Link>
                 </ul>
             </div>
             <div className="NavItems">
