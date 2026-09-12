@@ -3,9 +3,10 @@ from typing import Optional
 
 class UserBase(BaseModel):
     username : str
-    email : int
+    email : str
 
 class UserResponse(UserBase):
+    id : int
     class Config:
         from_attributes = True
 
@@ -13,9 +14,6 @@ class CreateUser(UserBase):
     password : str
 
 class UpdateUser(BaseModel):
-    username : Optional[str]
-    email : Optional[int]
-    password : Optional[str]
-
-class DeleteUser(BaseModel):
-    id : int
+    username : Optional[str] = None
+    email : Optional[str] = None
+    password : Optional[str] = None

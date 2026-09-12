@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 class ProductBase(BaseModel):
     name : str
-    quantity : int
+    price : float
     stock : int
 
 class ProductResponse(ProductBase):
@@ -13,9 +13,9 @@ class CreateProduct(ProductBase):
     pass
 
 class UpdateProduct(BaseModel):
-    name : Optional[str]
-    quantity : Optional[int]
-    stock : Optional[int]
+    name : Optional[str] = None
+    price : Optional[float] = None
+    stock : Optional[int] = None
 
 class DeleteProduct(BaseModel):
     id : int
